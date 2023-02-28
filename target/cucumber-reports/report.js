@@ -23,12 +23,355 @@ formatter.result({
   "status": "passed"
 });
 formatter.scenario({
+  "name": "Validate invalid login attempt",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@Smoke"
+    }
+  ]
+});
+formatter.step({
+  "name": "user enters username as \"abcd\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "SmartBearSteps.userEntersUsernameAs(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user enters password as \"abcd1234\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "SmartBearSteps.userEntersPasswordAs(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user clicks on Login button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "SmartBearSteps.userClicksOnLoginButton()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user should see \"Invalid Login or Password.\" message",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "SmartBearSteps.userShouldSeeMessage(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.background({
+  "name": "",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user is on \"http://secure.smartbearsoftware.com/samples/testcomplete12/WebOrders/login.aspx\"",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "SmartBearSteps.userIsOn(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Validate valid login attempt",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@Smoke"
+    }
+  ]
+});
+formatter.step({
+  "name": "user enters username as \"Tester\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "SmartBearSteps.userEntersUsernameAs(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user enters password as \"test\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "SmartBearSteps.userEntersPasswordAs(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user clicks on Login button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "SmartBearSteps.userClicksOnLoginButton()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user should be routed to \"http://secure.smartbearsoftware.com/samples/testcomplete12/weborders/\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "SmartBearSteps.userShouldBeRoutedTo(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.background({
+  "name": "",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user is on \"http://secure.smartbearsoftware.com/samples/testcomplete12/WebOrders/login.aspx\"",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "SmartBearSteps.userIsOn(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Validate \"Web Orders\" menu items",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@Regression"
+    }
+  ]
+});
+formatter.step({
+  "name": "user enters username as \"Tester\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "SmartBearSteps.userEntersUsernameAs(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user enters password as \"test\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "SmartBearSteps.userEntersPasswordAs(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user clicks on Login button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "SmartBearSteps.userClicksOnLoginButton()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user should be routed to \"http://secure.smartbearsoftware.com/samples/testcomplete12/weborders/\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "SmartBearSteps.userShouldBeRoutedTo(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "validate below menu items are displayed",
+  "rows": [
+    {
+      "cells": [
+        "View all orders",
+        "View all products",
+        "Order"
+      ]
+    }
+  ],
+  "keyword": "And "
+});
+formatter.match({
+  "location": "SmartBearSteps.validateBelowMenuItemsAreDisplayed(DataTable)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.background({
+  "name": "",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user is on \"http://secure.smartbearsoftware.com/samples/testcomplete12/WebOrders/login.aspx\"",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "SmartBearSteps.userIsOn(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Validate “Check All” and “Uncheck All” links",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@Regression"
+    }
+  ]
+});
+formatter.step({
+  "name": "user enters username as \"Tester\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "SmartBearSteps.userEntersUsernameAs(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user enters password as \"test\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "SmartBearSteps.userEntersPasswordAs(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user clicks on Login button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "SmartBearSteps.userClicksOnLoginButton()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user should be routed to \"http://secure.smartbearsoftware.com/samples/testcomplete12/weborders/\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "SmartBearSteps.userShouldBeRoutedTo(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user clicks on Check All button",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "SmartBearSteps.userClicksOnCheckAllButton()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "all rows should be checked",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "SmartBearSteps.allRowsShouldBeChecked()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user clicks on Uncheck All button",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "SmartBearSteps.userClicksOnUncheckAllButton()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "all rows should be unchecked",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "SmartBearSteps.allRowsShouldBeUnchecked()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.after({
+  "status": "passed"
+});
+formatter.background({
+  "name": "",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user is on \"http://secure.smartbearsoftware.com/samples/testcomplete12/WebOrders/login.aspx\"",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "SmartBearSteps.userIsOn(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
   "name": "Validate adding new order",
   "description": "",
   "keyword": "Scenario",
   "tags": [
     {
-      "name": "@Adding"
+      "name": "@Regression"
     }
   ]
 });
@@ -120,8 +463,7 @@ formatter.match({
   "location": "SmartBearSteps.userEntersAllPaymentInformation()"
 });
 formatter.result({
-  "error_message": "java.lang.IllegalArgumentException: Invalid element of type \"input\" provided. Should be \"table\"\n\tat co.boorse.seleniumtable.SeleniumTableImpl.\u003cinit\u003e(SeleniumTableImpl.java:27)\n\tat co.boorse.seleniumtable.SeleniumTable.getInstance(SeleniumTable.java:19)\n\tat utils.TableHandler.getAllRows(TableHandler.java:31)\n\tat utils.TableHandler.getRow(TableHandler.java:36)\n\tat utils.TableHandler.getCells(TableHandler.java:54)\n\tat utils.TableHandler.selectRadioBtnByVisibleText(TableHandler.java:57)\n\tat steps.SmartBearSteps.userEntersAllPaymentInformation(SmartBearSteps.java:126)\n\tat ✽.user enters all payment information(src/test/resources/features/smartbear.feature:46)\n",
-  "status": "failed"
+  "status": "passed"
 });
 formatter.step({
   "name": "user clicks on Process button",
@@ -131,7 +473,7 @@ formatter.match({
   "location": "SmartBearSteps.userClicksOnProcessButton()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "user clicks on View all orders menu item",
@@ -141,7 +483,7 @@ formatter.match({
   "location": "SmartBearSteps.userClicksOnViewAllOrdersMenuItem()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "user should see their order displayed in the “List of All Orders” table",
@@ -151,7 +493,7 @@ formatter.match({
   "location": "SmartBearSteps.userShouldSeeTheirOrderDisplayedInTheListOfAllOrdersTable()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
 formatter.step({
   "name": "validate all information entered displayed correct with the order",
@@ -161,9 +503,119 @@ formatter.match({
   "location": "SmartBearSteps.validateAllInformationEnteredDisplayedCorrectWithTheOrder()"
 });
 formatter.result({
-  "status": "skipped"
+  "status": "passed"
 });
-formatter.embedding("image/png", "embedded0.png");
+formatter.after({
+  "status": "passed"
+});
+formatter.background({
+  "name": "",
+  "description": "",
+  "keyword": "Background"
+});
+formatter.before({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user is on \"http://secure.smartbearsoftware.com/samples/testcomplete12/WebOrders/login.aspx\"",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "SmartBearSteps.userIsOn(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.scenario({
+  "name": "Validate “Delete Selected” button",
+  "description": "",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "name": "@Regression"
+    }
+  ]
+});
+formatter.step({
+  "name": "user enters username as \"Tester\"",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "SmartBearSteps.userEntersUsernameAs(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user enters password as \"test\"",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "SmartBearSteps.userEntersPasswordAs(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user clicks on Login button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "SmartBearSteps.userClicksOnLoginButton()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user should be routed to \"http://secure.smartbearsoftware.com/samples/testcomplete12/weborders/\"",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "SmartBearSteps.userShouldBeRoutedTo(String)"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user clicks on Check All button",
+  "keyword": "When "
+});
+formatter.match({
+  "location": "SmartBearSteps.userClicksOnCheckAllButton()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "user clicks on Delete Selected button",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "SmartBearSteps.userClicksOnDeleteSelectedButton()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "validate all orders are deleted from the “List of All Orders”",
+  "keyword": "Then "
+});
+formatter.match({
+  "location": "SmartBearSteps.validateAllOrdersAreDeletedFromTheListOfAllOrders()"
+});
+formatter.result({
+  "status": "passed"
+});
+formatter.step({
+  "name": "validate user sees \"List of orders is empty. In order to add new order use this link.\" message",
+  "keyword": "And "
+});
+formatter.match({
+  "location": "SmartBearSteps.validateUserSeesMessage(String)"
+});
+formatter.result({
+  "status": "passed"
+});
 formatter.after({
   "status": "passed"
 });

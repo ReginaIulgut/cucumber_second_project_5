@@ -58,7 +58,7 @@ public class SmartBearBasePage {
     public WebElement zipInput;
 
     @FindBy(css = "input[id*='cardList']")
-    public WebElement cardOption;
+    public List<WebElement> cardOption;
 
     @FindBy(id = "ctl00_MainContent_fmwOrder_TextBox6")
     public WebElement cardNumber;

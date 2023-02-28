@@ -117,15 +117,14 @@ public class SmartBearSteps {
         smartBearBasePage.streetInput.sendKeys(faker.address().streetAddress());
         smartBearBasePage.cityInput.sendKeys(faker.address().city());
         smartBearBasePage.stateInput.sendKeys(faker.address().state());
-        smartBearBasePage.zipInput.sendKeys(faker.address().zipCode());
+        smartBearBasePage.zipInput.sendKeys("45678");
     }
 
     @And("user enters all payment information")
     public void userEntersAllPaymentInformation() {
-        table = smartBearBasePage.cardOption;
-        TableHandler.selectRadioBtnByVisibleText(table, 0, "Visa");
-        smartBearBasePage.cardNumber.sendKeys(faker.business().creditCardNumber());
-        smartBearBasePage.expireDate.sendKeys(faker.business().creditCardExpiry());
+        smartBearBasePage.cardOption.get(0).click();
+        smartBearBasePage.cardNumber.sendKeys("123456789");
+        smartBearBasePage.expireDate.sendKeys("45/45");
     }
 
     @And("user clicks on Process button")
@@ -142,7 +141,7 @@ public class SmartBearSteps {
     public void userShouldSeeTheirOrderDisplayedInTheListOfAllOrdersTable() {
         tableRow = TableHandler.getTableRow(driver, 2);
         for (int i = 0; i < tableRow.size()-1; i++) {
-            Assert.assertFalse(tableRow.get(i).isDisplayed());
+            Assert.assertTrue(tableRow.get(i).isDisplayed());
         }
     }
 
