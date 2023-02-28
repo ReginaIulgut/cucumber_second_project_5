@@ -124,7 +124,7 @@ public class SmartBearSteps {
     public void userEntersAllPaymentInformation() {
         smartBearBasePage.cardOption.get(0).click();
         smartBearBasePage.cardNumber.sendKeys("123456789");
-        smartBearBasePage.expireDate.sendKeys("45/45");
+        smartBearBasePage.expireDate.sendKeys("12/12");
     }
 
     @And("user clicks on Process button")
